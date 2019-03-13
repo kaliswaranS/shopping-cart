@@ -1,0 +1,246 @@
+@media (min-width: 320px) {
+  html {
+    font-size: 14px;
+  }
+
+  // container
+  @include b('container') {
+    width: 100%;
+
+    @include e('main-content') {
+      flex-direction: column;
+    }
+  }
+
+    @include b('delivery-summary') {
+        flex-direction: column;
+
+        @include b('delivery-section') {
+            flex-basis: 100%;
+            max-width: 100%;
+            border: 1px solid #ccc;
+            padding: calcRem(20px);
+            border-radius: calcRem(6px);
+            margin-top: calcRem(40px);
+        }
+
+        @include b('summary-section') {
+            flex-basis: 100%;
+            max-width: 100%;
+            border: 1px solid #ccc;
+            padding: calcRem(20px);
+            border-radius: calcRem(6px);
+            margin-top: calcRem(40px);
+        }
+    }
+
+     @include b('product-table') {
+        background: #F9F9F9;
+        border: 1px solid #d9d9d9;
+        box-shadow: 0 0 calcRem(1px) #ccc;
+        border-radius: calcRem(6px);
+    }
+
+    body {
+        background-color: $white;
+    }
+
+    @include b('product-table') {
+
+        @include e('header') {
+            display: none;
+        }
+
+        @include e('body') {
+
+            @include e('row') {
+                padding: calcRem(30px) calcRem(16px);
+                flex-direction: column;
+                align-items: flex-start;
+                display: block;
+            }
+        }
+
+        @include e('column') {
+            position: relative;
+            left: 100px;
+            margin-bottom: 10px;
+            width: calc(100% - 100px);
+
+            @include m('product') {
+                left: 0;
+                flex-basis: 100%;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            @include m('quantity') {
+                display: inline-block;
+                width: 150px;
+            }
+
+            @include m('subtotal') {
+                display: inline-block;
+                width: 150px;
+            }
+        }
+    }
+
+    @include b('on-mobile') {
+        display: block;
+    }
+
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+      max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+      max-width: 720px;
+  }
+
+
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .container {
+      max-width: 960px;
+  }
+
+  @include b('delivery-summary') {
+      flex-direction: row;
+    padding: calcRem(50px);
+
+    @include b('delivery-section') {
+        flex-basis: 50%;
+        max-width: 50%;
+        border: 0;
+        padding: 0;
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    @include b('summary-section') {
+        flex-basis: 50%;
+        max-width: 50%;
+        border: 0;
+        padding: 0;
+        border-radius: 0;
+        margin-top: 0;
+    }
+  }
+
+    @include b('shopping-cart-wrapper') {
+        background-color: $white;
+        border: 1px solid #d9d9d9;
+        border-radius: calcRem(6px);
+        box-shadow: 0 0 calcRem(1px) #ccc;
+    }
+
+    @include b('product-table') {
+        background: $white;
+        border: 0;
+        box-shadow: none;
+    }
+
+    body {
+        background-color: $main--bg;
+    }
+
+    @include b('delivery-search') {
+        max-width: calcRem(300px);
+    }
+
+    @include b('delivery-tags') {
+        max-width: calcRem(320px);
+    }
+
+    @include b('product-table') {
+
+        @include e('header') {
+            display: block;
+        }
+
+        @include e('body') {
+
+            @include e('row') {
+                padding: calcRem(30px) calcRem(50px);
+                flex-direction: row;
+                align-items: center;
+                display: flex;
+            }
+        }
+
+        @include e('column') {
+            position: static;
+            left: auto;
+            margin-bottom: 0;
+            width: initial;
+
+            @include m('product') {
+                left: 0;
+                flex-basis: 50%;
+                max-width: 50%;
+            }
+
+            @include m('quantity') {
+                display: block;
+                width: auto;
+            }
+
+            @include m('subtotal') {
+                display: block;
+                width: auto;
+            }
+        }
+    }
+
+    @include b('on-mobile') {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+      max-width: 1140px;
+  }
+
+  @include b('stepper') {
+      max-width: 70%;
+  }
+
+
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 18px;
+  }
+}

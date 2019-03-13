@@ -1,0 +1,51 @@
+$base-font-size: 16px;
+$path-to-images: "../images/";
+
+/* Font Config */
+$font-regular: montserrat-regular;
+$font-semibold: montserrat-semibold;
+$font-bold: montserrat-bold;
+
+/* Common */
+$black: #111111;
+$grey: #666666;
+$white: #FFFFFF;
+
+/* Brand Color Shades */
+$brand--clr: #131F97;
+$brand--clr-1: #0087C7;
+
+/* Grey Shades */
+$grey--clr-1: #F5F5F5;
+
+/* Header */
+$header--bg: $brand--clr;
+$header--clr: $white;
+
+/* Footer */
+$footer--bg: #212121;
+$footer--clr: $white;
+
+/* MAIN CONTENT */
+$main--bg: #F2F2F2;
+
+// Navigation
+$navigation--clr: $white;
+
+// Progress
+$progress--clr: $grey--clr-1;
+$progress--bg-clr: #ccc;
+$progress--active-clr: $black;
+$progress--active-bg-clr: $black;
+$progress-indicator: calcRem(20px);
+
+// alert
+$alert--info-bg-clr: #848AC6;
+$alert--info-clr: #efefef;
+
+// table
+$table--header-clr: #6A6A6A;
+
+// button
+$button--primary-bg-clr: $brand--clr;
+$button--primary-clr: $white;

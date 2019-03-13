@@ -1,0 +1,29 @@
+$path-to-fonts: "../fonts/";
+
+@font-face {
+  font-family: $font-bold;
+  font-weight: normal;
+  font-style: normal;
+  src:
+    url("#{$path-to-fonts}montserrat-bold.woff2") format('woff2'),
+    url("#{$path-to-fonts}montserrat-bold.woff") format('woff'),
+}
+
+@font-face {
+  font-family: $font-regular;
+  font-weight: normal;
+  font-style: normal;
+  src:
+    url("#{$path-to-fonts}montserrat-regular.woff2") format('woff2'),
+    url("#{$path-to-fonts}montserrat-regular.woff") format('woff'),
+}
+
+@font-face {
+  font-family: $font-semibold;
+  font-weight: normal;
+  font-style: normal;
+  src:
+    url("#{$path-to-fonts}montserrat-semibold.woff2") format('woff2'),
+    url("#{$path-to-fonts}montserrat-semibold.woff") format('woff'),
+}
+
